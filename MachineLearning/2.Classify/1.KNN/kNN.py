@@ -100,7 +100,7 @@ def classifyPerson(funname):
 	group, maxData, minData = autoNorm(group)
 
 	personData = (array([data1, data2, data3]) - minData )/(maxData - minData)
-	personLabels = funname(personData.tolist(), group, labels, 3)
+	personLabels = funname(personData.tolist(), group, labels, 3)#调用的是funname函数吗？
 	print "This person is", personLabels
 
 
